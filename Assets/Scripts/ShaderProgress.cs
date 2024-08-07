@@ -1,9 +1,10 @@
 using UnityEngine;
 
-public class Materials : MonoBehaviour
+public class ShaderProgress : MonoBehaviour
 {
     [SerializeField] private float speed = 1f;
     [SerializeField] private bool loop = true;
+    [SerializeField] private bool bounce;
     
     private Material material;
     private float progress;
@@ -24,9 +25,16 @@ public class Materials : MonoBehaviour
         
         material.SetFloat(ProgressFloatKey, progress);
         
-        if (progress > 1f && loop)
+        if (progress is > 1f or < 0f && loop)
         {
-            progress = 0f;
+            if (bounce)
+            {
+                speed *= -1;
+
+                progress = progress > 1f ? 1f : 0f;
+            }
+            else
+                progress = 0f;
         }
     }
 }
