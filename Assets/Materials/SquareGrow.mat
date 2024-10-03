@@ -42,13 +42,13 @@ Material:
     m_Ints: []
     m_Floats:
     - _BarOpacity: 0.5
-    - _BarSize: 0.15
-    - _BorderOpacity: 0.5
-    - _BorderSize: 0.03
-    - _Progress: 0.4
+    - _BarSize: 0.181
+    - _BorderOpacity: 0.4
+    - _BorderSize: 0.02
+    - _Progress: 0.189
     m_Colors:
-    - _BarColor: {r: 0, g: 2.0000002, b: 2.0000002, a: 0}
-    - _BorderColor: {r: 0, g: 1, b: 1, a: 0}
+    - _BarColor: {r: 0, g: 2.9960787, b: 2.9960787, a: 0}
+    - _BorderColor: {r: 0, g: 2.9960787, b: 2.9960787, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &7598677221681097693
 MonoBehaviour:
